@@ -1,16 +1,17 @@
 <?php
 /**
 * @name BlackUplod
-* @category File Upload
-* @package blackupload
-* @author Black.Hacker
+* @description PHP Library to help you build your own file sharing website. 
+* @category File_Upload
+* @package Blackupload
+* @author Black.Hacker <farisksa79@protonmail.com>
 * @license MIT
 * @link https://github.com/BlackHacker511/BlackUpload
  */
 
 class Upload
 {
-   /** Class attributes */
+   /* Class attributes */
     private $upload_input; // HTML File Input => Example: $_FILES['file']
     private $name_array = []; // Array For File name Protection
     private $ext_array = []; // Array For Extension Protection
