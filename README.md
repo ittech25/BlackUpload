@@ -6,7 +6,7 @@
 
 PHP Library to help you build your own file sharing website.
 
-Comes with more then 20 features and you can setup it in less then 5 minutes using pre-made simple examples.
+Comes with more than 20 features and you can setup it in less then 5 minutes using pre-made examples.
 
 The class has more then 5 protection levels to make your life better and your server secure.
 
