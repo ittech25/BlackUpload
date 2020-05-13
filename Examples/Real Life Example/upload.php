@@ -4,6 +4,8 @@ header("Content-Type: application/json");
 
 include "../../Upload.php";
 
+use BlackUpload\Upload;
+
 $upload = new Upload;
 $upload->setController("../../");
 if ($upload->factory()) {
