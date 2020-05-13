@@ -1,37 +1,16 @@
 <?php
 /**
-BlackUpload
--------------------------------
-Project Name: BlackUpload
-Description: PHP Class to help you build your own file sharing website in less than 5 minutes
-Auther: Black.Hacker
-Version: 2.5.0
-Developer Email: farisksa79@protonmail.com
-Thanks to Gargron for some functions
--------------------------------
-Simple code snippet to implement BlackUpload
--------------------------------
-include 'BlackUpload/Upload.php';
-
-Create a new upload object
-$upload = new Upload;
-
-Enable file uploading using setINI function
-$upload->setINI(["file_uploads" => 1]);
-
-Set the class controller to "BlackUpload/"
-$upload->setController("BlackUpload/");
-
-Upload a file using the pre-made factory
-if ($upload->factory()) {
-echo $upload->getJSON(); # Print the file information in a json format
-}
--------------------------------
- **/
+* @name BlackUplod
+* @category File Upload
+* @package blackupload
+* @author Black.Hacker
+* @license MIT
+* @link https://github.com/BlackHacker511/BlackUpload
+ */
 
 class Upload
 {
-   /* Class attributes */
+   /** Class attributes */
     private $upload_input; // HTML File Input => Example: $_FILES['file']
     private $name_array = []; // Array For File name Protection
     private $ext_array = []; // Array For Extension Protection
@@ -63,7 +42,7 @@ class Upload
         11 => "Opreation does not exist.",
     ]; // Array list of error codes and the messages
 
-    /* Class Constructor to initialize attributes
+    /** Class Constructor to initialize attributes
      *
      * name: __construct
      * @param _FILE $upload_input
@@ -94,7 +73,7 @@ class Upload
         $this->min_width = $min_width; // Set Min Width for an image
     }
 
-    /* Function to set upload input when needed
+    /** Function to set upload input when needed
      *
      * name: setUpload
      * @param _FILE $upload_input
@@ -106,7 +85,7 @@ class Upload
         $this->upload_input = $upload_input; // Set the upload input to a new one
     }
 
-    /* Function to set the controller when needed
+    /** Function to set the controller when needed
      *
      * name: setController
      * @param string $controller
@@ -118,7 +97,7 @@ class Upload
         $this->controller = $this->sanitize($controller); // Set the class controller path
     }
 
-    /* Set the upload controller file => Example: upload.php <- the file that contain the upload code
+    /** Set the upload controller file => Example: upload.php <- the file that contain the upload code
      *
      * name: setUploadController
      * @param string $upload_controller
@@ -130,7 +109,7 @@ class Upload
         $this->upload_controller = realpath($this->sanitize($upload_controller)); // Sanitize and set the upload controller name
     }
 
-    /* Set $use_hash to true or false when needed
+    /** Set $use_hash to true or false when needed
      *
      * name: useHashAsName
      * @param boolean $use_hash
@@ -142,7 +121,7 @@ class Upload
         $this->use_hash = $use_hash;
     }
 
-    /* Enable Class Protection [Mime Types, File Extensions, Forbidden Names]
+    /** Enable Class Protection [Mime Types, File Extensions, Forbidden Names]
      *
      * name: enableProtection
      * @param null
@@ -183,7 +162,7 @@ class Upload
         );
     }
 
-    /* Set Forbidden array to a custom list when needed
+    /** Set Forbidden array to a custom list when needed
      *
      * name: setForbiddenFilter
      * @param array $forbidden_array
@@ -195,7 +174,7 @@ class Upload
         $this->name_array = $forbidden_array; // Custom name filter array
     }
  
-    /* Set Extension array to a custom list when needed
+    /** Set Extension array to a custom list when needed
      *
      * name: setExtensionFilter
      * @param array $ext_array
@@ -207,7 +186,7 @@ class Upload
         $this->name_array = $ext_array; // Custom extension filter array
     }
 
-    /* Set Mime array to a custom list when needed
+    /** Set Mime array to a custom list when needed
      *
      * name: setMimeFilter
      * @param array $mime_array
@@ -219,7 +198,7 @@ class Upload
         $this->name_array = $mime_array; // Custom mime filter array
     }
 
-    /* Set file size limit when needed
+    /** Set file size limit when needed
      *
      * name: setSizeLimit
      * @param integer $size
@@ -238,7 +217,7 @@ class Upload
         );
     }
 
-    /* Set upload folder when needed
+    /** Set upload folder when needed
      *
      * name: setUploadFolder
      * @param string $folder_name
@@ -250,7 +229,7 @@ class Upload
         $this->upload_folder = realpath($this->sanitize($folder_name)); // Sanitize and set the upload folder when needed
     }
 
-    /* Firewall 1: Check File Extension
+    /** Firewall 1: Check File Extension
      *
      * name: checkExtension
      * @param null
@@ -267,7 +246,7 @@ class Upload
         }
     }
 
-    /* Function to return the file input extension
+    /** Function to return the file input extension
      *
      * name: getExtension
      * @param null
@@ -285,7 +264,7 @@ class Upload
         );
     }
     
-    /* Firewall 2: Check File Mime Type
+    /** Firewall 2: Check File Mime Type
      *
      * name: checkMime
      * @param null
@@ -308,7 +287,7 @@ class Upload
         }
     }
 
-    /* Function to get the mime type using the server
+    /** Function to get the mime type using the server
      *
      * name: getMime
      * @param null
@@ -326,7 +305,7 @@ class Upload
         }
     }
 
-    /* Function that return the uploaded file type
+    /** Function that return the uploaded file type
      *
      * name: getFileType
      * @param null
@@ -338,7 +317,7 @@ class Upload
         return $this->upload_input['type']; // Return the mime type using php default settings
     }
 
-    /* Firewall 3: Check File Name is Forbidden
+    /** Firewall 3: Check File Name is Forbidden
      *
      * name: checkForbidden
      * @param null
@@ -355,7 +334,7 @@ class Upload
         }
     }
 
-    /* Firewall 4: Check file size limit
+    /** Firewall 4: Check file size limit
      *
      * name: checkSize
      * @param null
@@ -372,7 +351,7 @@ class Upload
         }
     }
 
-    /* Return the size of the uploaded file as bytes
+    /** Return the size of the uploaded file as bytes
      *
      * name: getSize
      * @param null
@@ -384,7 +363,7 @@ class Upload
         return $this->fixIntegerOverflow($this->upload_input['size']);
     }
 
-    /* Function to check if a the HTML input is empty
+    /** Function to check if a the HTML input is empty
      *
      * name: checkIfEmpty
      * @param null
@@ -401,7 +380,7 @@ class Upload
         }
     }
 
-    /* Return the name of the uploaded file
+    /** Return the name of the uploaded file
      *
      * name: getName
      * @param null
@@ -413,7 +392,7 @@ class Upload
         return $this->upload_input['name'];
     }
 
-    /* Return the PHP Generated name for the uploaded file
+    /** Return the PHP Generated name for the uploaded file
      *
      * name: getTempName
      * @param null
@@ -425,7 +404,7 @@ class Upload
         return $this->upload_input['tmp_name']; // Return the PHP Generated Temp name
     }
 
-    /*  Generate a Qr Code of the download url
+    /**  Generate a Qr Code of the download url
      *
      * name: generateQrCode
      * @param string $qr_size
@@ -437,7 +416,7 @@ class Upload
         return "https://chart.googleapis.com/chart?chs=" . $this->sanitize($qr_size) . "&cht=qr&chl=" . $this->generateDownloadLink() . "&choe=UTF-8"; # Using google charts api to generate a Qr Code with a custom size using $qr_size
     }
 
-    /* Generate a download link
+    /** Generate a download link
      *
      * name: generateDownloadLink
      * @param null
@@ -460,7 +439,7 @@ class Upload
         ); // Format String as the download link example => http://localhost/up/upload/filename.txt
     }
 
-    /* Generate a simple upload form
+    /** Generate a simple upload form
      *
      * name: generateForm
      * @param boolean $multiple
@@ -479,7 +458,7 @@ class Upload
         ';
     }
 
-    /* Generate a multi upload form
+    /** Generate a multi upload form
      *
      * name: generateMultiInput
      * @param integer $size
@@ -504,7 +483,7 @@ class Upload
         return $form;
     }
 
-    /* Return an "SHA1 Hashed File Name" of the uploaded file
+    /** Return an "SHA1 Hashed File Name" of the uploaded file
      *
      * name: hashName
      * @param null
@@ -522,7 +501,7 @@ class Upload
         ); // Get the file real name using getName() function and hash it using SHA1
     }
 
-    /* Get the date of the uploaded file
+    /** Get the date of the uploaded file
      *
      * name: getDate
      * @param null
@@ -534,7 +513,7 @@ class Upload
         return filemtime($this->getTempName()); // Get the temp_name using the function getTempName() and return the date
     }
 
-    /* Function to upload the file to the server
+    /** Function to upload the file to the server
      *
      * name: upload
      * @param null
@@ -572,7 +551,7 @@ class Upload
 
     }
 
-    /* Function to move a file to the upload folder
+    /** Function to move a file to the upload folder
      *
      * name: move_file
      * @param string $filename
@@ -593,7 +572,7 @@ class Upload
 
     }
 
-    /* Fix file input array to make it easy to iterate through it
+    /** Fix file input array to make it easy to iterate through it
      *
      * name: fix_array
      * @param array $file_post
@@ -617,7 +596,7 @@ class Upload
         return $file_array;
     }
 
-    /* Function to create and upload folder and secure it
+    /** Function to create and upload folder and secure it
      *
      * name: create_upload_folder
      * @param string $folder_name
@@ -637,7 +616,7 @@ class Upload
         }
     }
 
-    /* Function to potect a folder
+    /** Function to potect a folder
      *
      * name: protect_foler
      * @param string $folder_name
@@ -663,7 +642,7 @@ class Upload
         }
     }
 
-    /* Function that helps with input filter and sanitize
+    /** Function that helps with input filter and sanitize
      *
      * name: sanitize
      * @param string $value
@@ -680,7 +659,7 @@ class Upload
         return $data;
     }
 
-    /* Function that format file bytes to a readable format => Example: 7201450 to ( 7.2 MB )
+    /** Function that format file bytes to a readable format => Example: 7201450 to ( 7.2 MB )
      *
      * name: formatBytes
      * @param integer $bytes
@@ -699,7 +678,7 @@ class Upload
         return round($bytes, $precision) . ' ' . $units[$pow];
     }
 
-    /* Return any type of readable storage size to bytes Example | 7.2 MB => 7201450
+    /** Return any type of readable storage size to bytes Example | 7.2 MB => 7201450
      *
      * name: sizeInBytes
      * @param integer $size
@@ -718,7 +697,7 @@ class Upload
         return (floatval($matches["size"]) * pow(1024, $units[$unit]));
     }
 
-    /* Return the files from the upload folder to view them
+    /** Return the files from the upload folder to view them
      *
      * name: getUploadDirFiles
      * @param null
@@ -730,7 +709,7 @@ class Upload
         return scandir($this->upload_folder);
     }
 
-    /* Check if a file exist and it is a real file
+    /** Check if a file exist and it is a real file
      *
      * name: isFile
      * @param string $file_name
@@ -748,7 +727,7 @@ class Upload
         }
     }
 
-    /* Check if a directory exist and it is a real directory
+    /** Check if a directory exist and it is a real directory
      *
      * name: isDir
      * @param string $dir_name
@@ -767,7 +746,7 @@ class Upload
         }
     }
 
-    /* Create a callback function when needed after or before an operation
+    /** Create a callback function when needed after or before an operation
      *
      * name: callback
      * @param Function $function
@@ -788,7 +767,7 @@ class Upload
         }
     }
 
-    /* Add a message the system log
+    /** Add a message the system log
      *
      * name: add_log
      * @param mixed $id
@@ -806,7 +785,7 @@ class Upload
         }
     }
 
-    /* Get all logs from system log to view them
+    /** Get all logs from system log to view them
      *
      * name: getLogs
      * @param null
@@ -818,7 +797,7 @@ class Upload
         return $this->logs; // Return the system logs array
     }
 
-    /* Get a system log message by an array index id
+    /** Get a system log message by an array index id
      *
      * name: getLog
      * @param mixed $log_id
@@ -830,7 +809,7 @@ class Upload
         return $this->logs[$log_id];
     }
 
-    /* Set file overwriting to true or false
+    /** Set file overwriting to true or false
      *
      * name: setFileOverwriting
      * @param boolean $status
@@ -843,7 +822,7 @@ class Upload
 
     }
 
-    /* Set php.ini settings using an array => Example: setINI(["file_uploads"=>1])
+    /** Set php.ini settings using an array => Example: setINI(["file_uploads"=>1])
      *
      * name: setINI
      * @param array $ini_settings
@@ -858,7 +837,7 @@ class Upload
         }
     }
 
-    /* Ensure correct value for big integers
+    /** Ensure correct value for big integers
      *
      * name: fixIntegerOverflow
      * @param integer $int
@@ -874,7 +853,7 @@ class Upload
         return $int;
     }
 
-    /* Get all the uploaded file information in JSON
+    /** Get all the uploaded file information in JSON
      *
      * name: getJSON
      * @param null
@@ -897,7 +876,7 @@ class Upload
         );
     }
 
-    /* Function to add a file to the files array
+    /** Function to add a file to the files array
      *
      * name: add_file
      * @param string $json_string
@@ -909,7 +888,7 @@ class Upload
         array_push($this->files, json_decode($json_string));
     }
 
-    /* Function to return all the uploaded files information array
+    /** Function to return all the uploaded files information array
      *
      * name: get_files
      * @param null
@@ -921,7 +900,7 @@ class Upload
         return $this->files;
     }
 
-    /* Function to get a log message using a message index id
+    /** Function to get a log message using a message index id
      *
      * name: getMessage
      * @param integer $index
@@ -933,7 +912,7 @@ class Upload
         return $this->message[$index]; // Return a message from $message array using $index
     }
 
-    /* Include Bootstrap CSS
+    /** Include Bootstrap CSS
      *
      * name: includeBootstrap
      * @param null
@@ -946,7 +925,7 @@ class Upload
         return '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />';
     }
 
-    /* Include jQuery Javascript files
+    /** Include jQuery Javascript files
      *
      * name: includeJquery
      * @param null
@@ -961,7 +940,7 @@ class Upload
 				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>';
     }
 
-    /* Function to create an upload worker using one line of code and with all firewalls enabled with a size limit of 10MB per uploaded file
+    /** Function to create an upload worker using one line of code and with all firewalls enabled with a size limit of 10MB per uploaded file
      *
      * name: factory
      * @param array $upload_input
@@ -997,7 +976,7 @@ class Upload
         }
     }
 
-    /* Extra Firewall 1: Check an image dimenstions aginst the class dimenstions
+    /** Extra Firewall 1: Check an image dimenstions aginst the class dimenstions
      *
      * name: checkDimenstion
      * @param integer $opreation
@@ -1064,7 +1043,7 @@ class Upload
         }
     }
 
-    /* Function to set the maximum class image dimenstions to validate them
+    /** Function to set the maximum class image dimenstions to validate them
      *
      * name: setMaxDimenstion
      * @param integer $height
@@ -1078,7 +1057,7 @@ class Upload
         $this->max_width = $width;
     }
 
-    /* Function to set the minimum class image dimenstions to validate them
+    /** Function to set the minimum class image dimenstions to validate them
      *
      * name: setMinDimenstion
      * @param integer $height
@@ -1092,7 +1071,7 @@ class Upload
         $this->min_width = $width;
     }
 
-    /* Extra Firewall 2: Function to check if uploaded file is an image
+    /** Extra Firewall 2: Function to check if uploaded file is an image
      *
      * name: isImage
      * @param null
