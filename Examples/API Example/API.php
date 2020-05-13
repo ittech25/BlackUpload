@@ -3,6 +3,9 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
 include '../../Upload.php';
+
+use BlackUpload\Upload;
+
 $upload = new Upload;
 
 $upload->setINI(["file_uploads" => 1,]);
