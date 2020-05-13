@@ -1,5 +1,8 @@
 <?php
 include '../../Upload.php';
+
+use BlackUpload\Upload;
+
 $upload = new Upload;
 
 $upload->setINI(
