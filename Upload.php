@@ -2,6 +2,7 @@
 /**
 * @name BlackUplod
 * @description PHP Library to help you build your own file sharing website. 
+* @version 1.0
 * @category File_Upload
 * @package Blackupload
 * @author Black.Hacker <farisksa79@protonmail.com>
@@ -108,7 +109,7 @@ class Upload
      */
     public function setUploadController($upload_controller)
     {
-        $this->upload_controller = realpath($this->sanitize($upload_controller)); // Sanitize and set the upload controller name
+        $this->upload_controller = $this->sanitize($upload_controller); // Sanitize and set the upload controller name
     }
 
     /** Set $use_hash to true or false when needed
@@ -228,7 +229,7 @@ class Upload
      */
     public function setUploadFolder($folder_name)
     {
-        $this->upload_folder = realpath($this->sanitize($folder_name)); // Sanitize and set the upload folder when needed
+        $this->upload_folder = $this->sanitize($folder_name); // Sanitize and set the upload folder when needed
     }
 
     /** Firewall 1: Check File Extension
@@ -436,7 +437,7 @@ class Upload
             isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http', // check if the website is using SSL or not
             $_SERVER['SERVER_NAME'], // get the website url
             dirname($_SERVER['REQUEST_URI']), // get the requested url base dir name
-            basename($this->upload_folder), // Get the upload folder
+            $this->upload_folder, // Get the upload folder
             $filename // Get the uploaded file name
         ); // Format String as the download link example => http://localhost/up/upload/filename.txt
     }
@@ -638,7 +639,7 @@ class Upload
         }
 
         // Forbid Access to the upload folder
-        if (!file_exists(realpath($this->sanitize($folder_name) . "/" . "index.php"))) {
+        if (!file_exists($this->sanitize($folder_name) . "/" . "index.php")) {
             $content = "<?php http_response_code(403); ?>"; // "Enable Forbidden"
             @file_put_contents($this->sanitize($folder_name) . "/" . "index.php", $content); // Write the "Enable Forbidden" Code to a new file
         }
