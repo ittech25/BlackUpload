@@ -8,6 +8,7 @@
 * @license MIT
 * @link https://github.com/BlackHacker511/BlackUpload
  */
+namespace BlackUpload;
 
 class Upload
 {
@@ -435,7 +436,7 @@ class Upload
             isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http', // check if the website is using SSL or not
             $_SERVER['SERVER_NAME'], // get the website url
             dirname($_SERVER['REQUEST_URI']), // get the requested url base dir name
-            $this->upload_folder, // Get the upload folder
+            basename($this->upload_folder), // Get the upload folder
             $filename // Get the uploaded file name
         ); // Format String as the download link example => http://localhost/up/upload/filename.txt
     }
