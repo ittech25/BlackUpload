@@ -552,39 +552,51 @@ if($upload->isImage()){
 
 # How to Use
 
-1. Create a new folder for your project and inside a folder call it "upload"
+1. Create a new folder for your project
 
-2. Change folder permissions for "upload" to 777 using cPanel or this bash line
+2. Download The Project and extract inside that folder
+
+3. create a folder and call it "upload"
+
+4. Change folder permissions for "upload" to 777 using cPanel or this bash line
 ```bash
 chmod 777 -R upload
 ```
 
-2. Download The Project and extract inside that folder
+5. Move Upload.php and the json filters inside a folder and call it "BlackUpload"
 
-3. Move Upload.php and the json filters inside a folder and call it "BlackUpload"
+6. Create a file and call it "index.php"
 
-4. Create a file and call it "index.php"
-
-5. Include Upload.php in your file
+7. Include Upload.php in your file
 ```php
 include 'BlackUpload/Upload.php';
 ```
 
-6. Use the proposed snippet code to generate a simple upload form
+8. Add the class namespace to the file
+```php
+use namespace BlackUpload\Upload;
+```
+
+9. Use the proposed snippet code to generate a simple upload form
 ```php
 $upload = new Upload;
 $upload->setUploadController($upload->sanitize("upload.php"));
 echo $upload->generateForm(false);
 ```
 
-7. Create a file and call it "upload.php"
+10. Create a file and call it "upload.php"
 
-8. Include Upload.php in the upload.php file
+11. Include Upload.php in the upload.php file
 ```php
 include 'BlackUpload/Upload.php';
 ```
 
-9. Use the proposed snippet code to create a simple upload worker using the factory
+12. Add the class namespace to the file
+```php
+use namespace BlackUploa
+```
+
+13. Use the proposed snippet code to create a simple upload worker using the factory
 ```php
 $upload = new Upload;
 
@@ -597,7 +609,7 @@ if ($upload->factory()) {
 }
 ```
 
-10. Enjoy your new file sharing website
+14. Enjoy your new file sharing website
 
 # Copyright
 Developed by Black.Hacker
