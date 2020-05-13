@@ -4,21 +4,21 @@
 
 # BlackUpload PHP Library
 
-PHP Library to help you build your own file sharing website.
+PHP Library to help you build your own file-sharing website.
 
-Comes with more than 20 features and you can setup it in less then 5 minutes using pre-made examples.
+It comes with more than 20 features and you can set up it in less than 5 minutes using pre-made examples.
 
-The class has more then 5 protection levels to make your life better and your server secure.
+The class has more than 5 protection levels to make your life better and your server secure.
 
 You can use it as an API for your website or add a database wrapper to it and create a whole file sharing service.
 
-Developed using PHP and comes with 3 main examples to show you how this PHP Class work
+Developed using PHP and comes with 3 main examples to show you how this PHP class works
 
-1. Real Life Example with all filters and security levels enabled
+1. Real-Life Example with all filters and security levels enabled
 
 2. Simple Test Example with multiple file upload enabled to show you how it works
 
-3. Simple API without Auth with all filters enabled to show you how to use it as a service 
+3. Simple API without Auth with all filters enabled to show you how to use it as a service
 
 
 # Features
@@ -29,7 +29,7 @@ Developed using PHP and comes with 3 main examples to show you how this PHP Clas
    + Extensions
    + Size
    + Forbidden names
-3. Image Dimenstion Checker
+3. Image Dimension Checker
 4. Image Validator
 5. Out Of The Box Functions
 6. Multi-File Upload Support
@@ -42,9 +42,9 @@ Developed using PHP and comes with 3 main examples to show you how this PHP Clas
 11. Will Documented and easy to read
 12. QR Code Generator
 13. Download URL Generator
-14. Comes with more then 1 example
+14. Comes with more than 1 example
 15. File information
-    + File name
+    + Filename
     + File SHA-128 Hash
     + File Size
     + File Upload Date
@@ -54,8 +54,8 @@ Developed using PHP and comes with 3 main examples to show you how this PHP Clas
 17. Upload folder creator and protector
 18. SHA-128 File name Hashing
 19. Error Messages Manager
-20. Upload Worker Factory Genertor
-21. Easy to setup in less then 5 minutes
+20. Upload Worker Factory Generator
+21. Easy to set up in less than 5 minutes
 
 # Documentation
 
