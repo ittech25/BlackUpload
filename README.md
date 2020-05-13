@@ -593,7 +593,7 @@ include 'BlackUpload/Upload.php';
 
 12. Add the class namespace to the file
 ```php
-use namespace BlackUploa
+use namespace BlackUpload\Upload;
 ```
 
 13. Use the proposed snippet code to create a simple upload worker using the factory
