@@ -16,7 +16,7 @@ Developed using PHP and comes with 3 main examples to show you how this PHP Clas
 
 1. Real Life Example with all filters and security levels enabled
 
-2. Simple Test Example with multiple file upload enabled and no filters to show you how it works
+2. Simple Test Example with multiple file upload enabled to show you how it works
 
 3. Simple API without Auth with all filters enabled to show you how to use it as a service 
 
@@ -44,11 +44,13 @@ Developed using PHP and comes with 3 main examples to show you how this PHP Clas
 13. Download URL Generator
 14. Comes with more then 1 example
 15. File information
-   + File name
-   + File SHA-128 Hash
-   + File Size
-   + File Upload Date
-16. Generate HTML Forms [Single,Multi] Inputs
+    + File name
+    + File SHA-128 Hash
+    + File Size
+    + File Upload Date
+16. Generate HTML Forms
+    + Single Input
+    + Multi Inputs
 17. Upload folder creator and protector
 18. SHA-128 File name Hashing
 19. Error Messages Manager
