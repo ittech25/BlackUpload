@@ -79,7 +79,7 @@ $upload->setController("../UploadClass/");
 ```
 
 ## $Upload::setUploadController($upload_controller)
-Set the upload controller file that contain the upload worker
+Set the upload controller file that contains the upload worker
 
 Example:
 ```php
@@ -89,7 +89,7 @@ $upload->setUploadController("upload.php");
 ## $Upload::setHashName($use_hash)
 Set $hash_name to true or false when needed
 
-Use the file hashed name insted of the raw name
+Use the file hashed name instead of the raw name
 
 Example:
 ```php
@@ -205,7 +205,7 @@ echo $upload->getMime();
 ```
 
 ## $Upload::getFileType()
-Function to return the mime type using php default settings
+Function to return the mime type using PHP default settings
 
 Example:
 ```php
@@ -241,7 +241,7 @@ echo $upload->getSize();
 ```
 
 ## $Upload::checkIfEmpty()
-Function to check if a the HTML input is empty
+Function to check if an HTML input is empty
 
 Example:
 ```php
@@ -259,7 +259,7 @@ echo $upload->getName();
 ```
 
 ## $Upload::getTempName()
-Function that returns the PHP Generated name for the uploaded file
+A function that returns the PHP Generated name for the uploaded file
 
 Example:
 ```php
@@ -267,7 +267,7 @@ echo $upload->getTempName();
 ```
 
 ## $Upload::generateQrCode($qr_size)
-Generate a Qr Code of the file download url using Google Charts API
+Generate a Qr Code of the file download URL using Google Charts API
 
 Example:
 ```php
@@ -302,7 +302,7 @@ echo $upload->generateMultiInput(10);
 ```
 
 ## $Upload::hashName()
-Return an "SHA1 Hashed File Name" of the uploaded file
+Return a "SHA1 Hashed File Name" of the uploaded file
 
 Example:
 ```php
@@ -342,7 +342,7 @@ $upload->create_upload_folder("upload");
 ```
 
 ## $Upload::protect_foler($folder_name)
-Function to potect a folder using .htaccess and 403 code in index.php
+Function to protect a folder using .htaccess and 403 code in index.php
 
 Example:
 ```php
@@ -350,7 +350,7 @@ $upload->protect_foler("upload");
 ```
 
 ## $Upload::sanitize($value)
-Function that helps with input filtering and sanitizing
+A function that helps with input filtering and sanitizing
 
 Example:
 ```php
@@ -358,7 +358,7 @@ echo $upload->sanitize("<script>alert("XSS CODE")</script>");
 ```
 
 ## $Upload::formatBytes($bytes, $precision = 2)
-Function that format file bytes to a readable format => Example: 7201450 to ( 7.2 MB )
+A function that format file bytes to a readable format => Example: 7201450 to ( 7.2 MB )
 
 Example:
 ```php
@@ -383,7 +383,7 @@ print_r($files);
 ```
 
 ## $Upload::isFile($file_name)
-Check if a file exist and it is a real file
+Check if a file exists and it is a real file
 
 Example:
 ```php
@@ -393,7 +393,7 @@ if($upload->isFile("index.php") === true){
 ```
 
 ## $Upload::isDir($dir_name)
-Check if a directory exist and it is a real directory
+Check if a directory exists and it is a real directory
 
 Example:
 ```php
@@ -419,7 +419,7 @@ $upload->add_log("log_1","This is a log message");
 ```
 
 ## $Upload::getLogs()
-Get all logs from system log to view them
+Get all logs from the log system to view them
 
 Example:
 ```php
@@ -529,7 +529,7 @@ if($checkDimenstion()){
 ```
 
 ## $Upload::setDimenstion($height, $width)
-Function to set class image dimenstions to validate them
+Function to set class image dimensions to validate them
 
 Example:
 ```php
@@ -537,7 +537,7 @@ $upload->setDimenstion(512, 512);
 ```
 
 ## $Upload::isImage()
-Function to check if uploaded file is an image
+Function to check if the uploaded file is an image
 
 Example:
 ```php
@@ -563,7 +563,7 @@ if($upload->isImage()){
 chmod 777 -R upload
 ```
 
-5. Move Upload.php and the json filters inside a folder and call it "BlackUpload"
+5. Move Upload.php and the JSON filters inside a folder and call it "BlackUpload"
 
 6. Create a file and call it "index.php"
 
@@ -609,7 +609,7 @@ if ($upload->factory()) {
 }
 ```
 
-14. Enjoy your new file sharing website
+14. Enjoy your new file-sharing website
 
 # Copyright
 Developed by Black.Hacker
