@@ -1,6 +1,6 @@
 ![Logo](https://h.top4top.io/p_1531l8fhu1.png)
 
-![GradeA](https://www.code-inspector.com/project/8000/status/svg)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Version](https://badgen.net/badge/version/v1.0/blue)
+![GradeA](https://www.code-inspector.com/project/8000/status/svg)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Version](https://badgen.net/badge/version/v1.0/blue) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload?ref=badge_shield)
 
 # BlackUpload PHP Library
 
@@ -547,7 +547,6 @@ if($upload->isImage()){
 ```
 # Screenshots
 ![Simple Example](https://i.imgur.com/PGLoQzm.png)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload?ref=badge_shield)
 
 ![Advanced and Real Life Example](https://i.imgur.com/hukis3T.png)
 
@@ -612,11 +611,10 @@ if ($upload->factory()) {
 
 14. Enjoy your new file-sharing website
 
+# License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload?ref=badge_large)
+
 # Copyright
 Developed by Black.Hacker
 
 Thanks to @Gargron for some functions
-
-
-## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload?ref=badge_large)
