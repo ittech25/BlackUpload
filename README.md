@@ -547,6 +547,7 @@ if($upload->isImage()){
 ```
 # Screenshots
 ![Simple Example](https://i.imgur.com/PGLoQzm.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload?ref=badge_shield)
 
 ![Advanced and Real Life Example](https://i.imgur.com/hukis3T.png)
 
@@ -615,3 +616,7 @@ if ($upload->factory()) {
 Developed by Black.Hacker
 
 Thanks to @Gargron for some functions
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload?ref=badge_large)
