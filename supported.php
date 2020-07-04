@@ -9,7 +9,7 @@ $extension = json_decode(file_get_contents("classes/extension.json"));
     <meta charset="UTF-8" />
     <title><?php echo $config['website_name'] ?> - Supported Formats</title>
     <?php include_once 'components/header.php';?>
-    <link rel="stylesheet" type="text/css" href="src/css/dataTables.bootstrap4.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -97,7 +97,7 @@ $extension = json_decode(file_get_contents("classes/extension.json"));
     <?php include_once 'components/footer.php';?>
 
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="src/js/dataTables.bootstrap4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
     <script type="text/javascript">
 	// Call the dataTables jQuery plugin
 	$(document).ready(function () {
