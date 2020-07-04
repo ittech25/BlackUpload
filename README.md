@@ -1,6 +1,6 @@
 ![Logo](https://h.top4top.io/p_1531l8fhu1.png)
 
-![GradeA](https://www.code-inspector.com/project/8000/status/svg)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Version](https://badgen.net/badge/version/v1.0/blue) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload?ref=badge_shield)
+![GradeC](https://www.code-inspector.com/project/8000/status/svg)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Version](https://badgen.net/badge/version/v1.0/blue) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload?ref=badge_shield)
 
 # BlackUpload PHP Library
 
@@ -20,8 +20,7 @@ It comes with more than 20 features and you can set up it in less than 5 minutes
 3. Out Of The Box Functions
 4. Bootstrap and jQuery over CDN
 5. Multi-File Upload Support
-6. Quality [ Grade A ] Code
-7. BlackUpload PHP Class 20+ Features
+6. BlackUpload PHP Class 20+ Features
 
 # Screenshots
 ![](https://i.imgur.com/i7SnEwa.png)
