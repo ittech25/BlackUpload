@@ -21,5 +21,5 @@
   rel="stylesheet"
 />
 <link rel="stylesheet" type="text/css" href="src/css/custom.css" />
-<link rel="stylesheet" type="text/css" href="src/css/owl.carousel.min.css" />
-<link rel="stylesheet" type="text/css" href="src/css/owl.theme.default.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.theme.default.min.css" />
