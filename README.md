@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Version](https://badgen.net/badge/version/v2.0/blue) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FBlackHacker511%2FBlackUpload?ref=badge_shield)
 
-# BlackUpload PHP Library
+# BlackUpload
 
 BlackUpload is an Anonymus File Uploader Script with Multi File Upload Support
 
