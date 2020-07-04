@@ -31,7 +31,7 @@
 ></script>
 <script
   type="text/javascript"
-  src="src/js/owl.carousel.min.js"
+  src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"
 ></script>
 <script
   type="text/javascript"
