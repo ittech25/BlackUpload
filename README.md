@@ -18,24 +18,25 @@ It comes with more than 20 features and you can set up it in less than 5 minutes
    + Size
    + Forbidden names
 3. Out Of The Box Functions
-4. Multi-File Upload Support
-5. Quality [ Grade A ] Code
-6. BlackUpload PHP Class 20+ Features
+4. Bootstap and jQuery over CDN
+5. Multi-File Upload Support
+6. Quality [ Grade A ] Code
+7. BlackUpload PHP Class 20+ Features
 
 # Screenshots
 ![](https://i.imgur.com/i7SnEwa.png)
 
 ![](https://i.imgur.com/pWKDo6V.png)
 
-![](https://i.imgur.com/mqGnodq.png)
+![](https://f.top4top.io/p_1646u4zlh1.png)
 
-![](https://i.imgur.com/hU9ygMP.png)
+![](https://h.top4top.io/p_1646uj0ze4.png)
 
 ![](https://i.imgur.com/JdKxCxJ.png)
 
 ![](https://i.imgur.com/DZND3lv.png)
 
-![](https://i.imgur.com/lseHWRz.png)
+![](https://f.top4top.io/p_1646ni7jl2.png)
 
 ![](https://i.imgur.com/W7t2mSw.png)
 
