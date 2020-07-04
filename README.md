@@ -46,6 +46,8 @@ It comes with more than 20 features and you can set up it in less than 5 minutes
 # Note
 Make Uploads Folder Writeble ``` chmod 777 uploads ```
 
+Choose a theme from [Bootswatch.com](https://bootswatch.com/) 
+
 # How to Use
 1. Upload all files to your server
 2. Create a database and import uploads.sql
