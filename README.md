@@ -18,7 +18,7 @@ It comes with more than 20 features and you can set up it in less than 5 minutes
    + Size
    + Forbidden names
 3. Out Of The Box Functions
-4. Bootstap and jQuery over CDN
+4. Bootstrap and jQuery over CDN
 5. Multi-File Upload Support
 6. Quality [ Grade A ] Code
 7. BlackUpload PHP Class 20+ Features
