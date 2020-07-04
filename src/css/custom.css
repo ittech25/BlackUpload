@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+
+*{
+  font-family: 'Oxygen',sans-serif;
+}
+
+html{
+  font-family: 'Oxygen',sans-serif;
+}
+
+body{
+  font-family: 'Oxygen',sans-serif;
+}
+
+p{
+  font-family: 'Oxygen',sans-serif;
+}
+
+
+
+.circle-twitter{
+  background-color: #1da1f2;
+  color: white;
+  border-radius: 50%;
+}
+
+.circle-facebook{
+  border-radius: 50%;
+  color: white;
+  background-color: #3c5a99;
+}
+
+.circle-instagram{
+  border-radius: 50%;
+  background-color: #c13584;
+  color: white;
+}
+
+.circle-linkedin{
+  border-radius: 50%;
+  background-color: #0077B5;
+  color: white;
+}
+
+.circle-snapchat{
+  border-radius: 50%;
+  background-color: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.circle{
+  transition: all 0.3s;
+  border-radius: 50%;
+  border: 1px dashed black;
+}
+
+.circle:hover{
+  box-shadow: 0 0 5px #555;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    height: 100%;
+    width: auto;
+    min-width: 100%;
+}
+
+.owl-stage-outer * {
+     height:100%;
+}
+
+#view-ad-image {
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  overflow: hidden;
+  background: red;
+  position: relative;
+}
