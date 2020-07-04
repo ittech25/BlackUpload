@@ -10,7 +10,7 @@
 <meta name="language" content="EN" />
 <link
   rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css"
+  href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/<?php echo $config['theme_name'] ?>/bootstrap.min.css"
 />
 <link
   rel="stylesheet"
