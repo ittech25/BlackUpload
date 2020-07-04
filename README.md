@@ -4,7 +4,7 @@
 
 # BlackUpload PHP Library
 
-BlackUpload is Databaseless and Anonymus File Uploader Script with Multi File Upload Support
+BlackUpload is an Anonymus File Uploader Script with Multi File Upload Support
 
 It comes with more than 20 features and you can set up it in less than 5 minutes.
 
