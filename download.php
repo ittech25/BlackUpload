@@ -102,7 +102,7 @@ if (isset($_GET['file_id'])) {
                         <div class="col-12 text-dark mt-3 mb-3 mr-3 ml-3">
                           <p>
                             <u
-                              >MD5 Hash:
+                              >SHA1 Hash:
                               <?php echo $file_data->filehash ?></u
                             >
                           </p>
