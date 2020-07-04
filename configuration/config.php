@@ -11,6 +11,7 @@ $config = [
     "url" => "http: //localhost/blackupload",
     "owner_name" => "Faris",
     "email" => "farisksa79@gmail.com",
+    "theme_name" => "litera",
 ];
 
 /** ------------------------------------------ */
