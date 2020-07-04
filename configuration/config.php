@@ -9,8 +9,8 @@ $config = [
     "description" => "this is uploading service website",
     "keywords" => "upload,file upload,file uploading",
     "url" => "http: //localhost/blackupload",
-    "owner_name" => "Faris",
-    "email" => "farisksa79@gmail.com",
+    "owner_name" => "John Doe",
+    "email" => "blackupload@php.com",
     "theme_name" => "litera",
 ];
 
